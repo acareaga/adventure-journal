@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/acareaga/adventure-journal.png?label=ready&title=Ready)](https://waffle.io/acareaga/adventure-journal)
 # Adventure Journal
 
 
