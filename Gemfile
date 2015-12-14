@@ -11,13 +11,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "omniauth-instagram"
 gem "figaro"
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'byebug'
   gem 'capybara'
+  gem 'pry'
 end
 
 group :development do
