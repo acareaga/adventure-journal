@@ -19,8 +19,6 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
 
   def stub_omniauth
     OmniAuth.config.test_mode = true
-    # then, provide a set of fake oauth data that
-    # omniauth will use when a user tries to authenticate:
     OmniAuth.config.mock_auth[:instagram] = OmniAuth::AuthHash.new({
       provider: 'instagram',
       extra: {
