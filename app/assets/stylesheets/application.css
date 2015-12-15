@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+ @import 'materialize';
+ @import url(https://fonts.googleapis.com/css?family=Righteous|Doppio+One);
+
+ body {
+   font-family: 'Doppio One' sans-serif;
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+
+ nav {
+   color: black;
+ }
+
+ nav ul li a {
+   color: black;
+ }
+
+ .page-footer {
+  font-size: 80%;
+}
+
+.brand-logo {
+  margin-left: 25px;
+}
+​
+.footer-copyright {
+  font-size: 24px;
+}
+
+.a {
+  color: 125688;
+}
+
+#nav-mobile {
+  margin-right: 25px;
+}

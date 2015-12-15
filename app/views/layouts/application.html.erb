@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>AdventureJournal</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Righteous|Doppio+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
   </head>
-
+  <main>
   <body>
-
+    <header>
+      <nav class="z-depth-0 navbar">
+        <div class="nav-wrapper grey lighten-4">
+          <a href="/" class="brand-logo black-text center">AdventureJournal</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><%= login_logout_path %></li>
+            <li>Search</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <br>
     <%= yield %>
-
+    <br>
+    </main>​
+    <footer class="page-footer grey lighten-4">
+      <div class="footer-copyright">
+        <div class="container black-text">
+          <a class="black-text text-lighten-4 left" href="https://github.com/acareaga" target="_blank">Made by Aaron Careaga</a>
+          <div class= "black-text text-lighten-4 right">© 2015 AdventureJournal</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
