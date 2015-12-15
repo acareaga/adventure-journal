@@ -16,12 +16,24 @@
       <br>
       <br>
 
-      <% @user_posts.each do |post| %>
-        <div style='float:left;'>
-          <%= image_tag post.images.thumbnail.url %>
-        <br/>
-        <a href='/media_like/<%= post.id %>'>Like</a> | <a href='/media_unlike/<%= post.id %>'>UnLike</a> | Likes: <%= post.likes[:count] %></div>
-      <% end %>
+          <div class="row">
+          <% @user_posts.each do |post| %>
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image">
+                  <%= image_tag post.images.standard_resolution.url %>
+                </div>
+                <div class="card-content">
+                   Favorites: <%= post.likes[:count] %>
+                </div>
+                <div class="card-action">
+                  <a href='/media_like/<%= post.id %>'>Like</a>
+                  <a href='/media_unlike/<%= post.id %>'>UnLike</a>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
 
     <% else %>
       <div class="col s12"><span class="flow-text"> Login to Adventure </span></div>
