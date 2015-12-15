@@ -63,9 +63,6 @@ GEM
       multipart-post (>= 1.2, < 3)
     figaro (1.1.1)
       thor (~> 0.14)
-    foundation-rails (5.5.3.2)
-      railties (>= 3.1.0)
-      sass (>= 3.3.0, < 3.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashie (3.4.3)
@@ -186,7 +183,6 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   figaro
-  foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
   omniauth-instagram
@@ -201,4 +197,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.10.6
+   1.11.0
