@@ -1,7 +1,8 @@
 class SessionsController < ApplicationController
 
   def create
-    if user = User.from_omniauth(request.env["omniauth.auth"])
+    user = User.find_or_create(auth_info)
+    if user
       session[:access_token] = user.oauth_token
       session[:user_id] = user.id
       session[:uid] = user.uid
@@ -16,7 +17,7 @@ class SessionsController < ApplicationController
 
   private
 
-  def callback_url
-    "http://127.0.0.1:3000/auth/instagram/callback"
+  def auth_info
+    request.env["omniauth.auth"]
   end
 end
