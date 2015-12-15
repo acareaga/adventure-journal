@@ -2,11 +2,11 @@
     <% if current_user %>
       <h3> <%= current_user.username %>'s recent media</h3>
 
-      <% @instagram.each do |media| %>
+      <% @user_posts.each do |post| %>
         <div style='float:left;'>
-          <%= image_tag media.images.thumbnail.url %>
+          <%= image_tag post.images.thumbnail.url %>
         <br/>
-        <a href='/media_like/<%= media.id %>'>Like</a> | <a href='/media_unlike/<%= media.id %>'>UnLike</a> | Likes: <%= media.likes[:count] %></div>
+        <a href='/media_like/<%= post.id %>'>Like</a> | <a href='/media_unlike/<%= post.id %>'>UnLike</a> | Likes: <%= post.likes[:count] %></div>
       <% end %>
 
     <% else %>
