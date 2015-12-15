@@ -1,11 +1,12 @@
 <div class="container">
     <% if current_user %>
-      <% client = Instagram.client(:access_token => current_user[:oauth_token]) %>
       <h3> <%= current_user.username %>'s recent media</h3>
 
-      <%= client.user_recent_media.each do |media_item|  %>
-        <div style='float:left;'><img src="<%= media_item.images.thumbnail.url %>"><br/>
-        <a href='/media_like/<%= media_item.id %>'>Like</a> | <a href='/media_unlike/<%= media_item.id %>'>UnLike</a> | Likes: <%= media_item.likes[:count] %></div>
+      <% @instagram.each do |media| %>
+        <div style='float:left;'>
+          <%= image_tag media.images.thumbnail.url %>
+        <br/>
+        <a href='/media_like/<%= media.id %>'>Like</a> | <a href='/media_unlike/<%= media.id %>'>UnLike</a> | Likes: <%= media.likes[:count] %></div>
       <% end %>
 
     <% else %>
