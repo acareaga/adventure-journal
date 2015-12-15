@@ -16,10 +16,11 @@
   <body>
     <header>
       <nav class="z-depth-0 navbar">
-        <div class="nav-wrapper grey lighten-4">
+        <div class="nav-wrapper white lighten-4">
           <a href="/" class="brand-logo black-text center">AdventureJournal</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><%= login_logout_path %></li>
+            <li><%= link_to "Powskiing", dashboard_path %></li> 
             <li>Search</li>
           </ul>
         </div>
@@ -29,9 +30,9 @@
     <%= yield %>
     <br>
     </main>​
-    <footer class="page-footer grey lighten-4">
+    <footer class="page-footer white">
       <div class="footer-copyright">
-        <div class="container black-text">
+        <div class="container">
           <a class="black-text text-lighten-4 left" href="https://github.com/acareaga" target="_blank">Made by Aaron Careaga</a>
           <div class= "black-text text-lighten-4 right">© 2015 AdventureJournal</div>
         </div>

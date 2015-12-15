@@ -22,6 +22,7 @@
    display: flex;
    min-height: 100vh;
    flex-direction: column;
+   background-color: #f1f1f1;
  }
 
  main {
@@ -48,10 +49,18 @@
   font-size: 24px;
 }
 
-.a {
-  color: 125688;
+a {
+  color: #3f729b;
+}
+
+a:hover {
+  color: #1c5380;
 }
 
 #nav-mobile {
   margin-right: 25px;
+}
+
+.text-muted {
+  color: #90939a;
 }
