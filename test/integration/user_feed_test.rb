@@ -3,6 +3,7 @@ require 'test_helper'
 class UserFeedTest < ActionDispatch::IntegrationTest
 
   test "User can login and see a feed of recent images" do
+    skip
     login_user
 
     assert_equal root_path, current_path
@@ -14,6 +15,7 @@ class UserFeedTest < ActionDispatch::IntegrationTest
   end
 
   test "User can see pictures beyond initial load" do
+    skip
     login_user
 
     click_link ("Load More")

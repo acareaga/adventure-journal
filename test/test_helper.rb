@@ -3,8 +3,13 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
 class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  def login_user
+    visit root_path
+    click_link "Login"
+    fill_in "username", with: "powskiing"
+    fill_in "password", with: "password"
+    click_link "Log in"
+  end
 end
