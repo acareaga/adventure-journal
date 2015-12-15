@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  CALLBACK_URL = "http://127.0.0.1:3000/auth/instagram/callback"
+  CALLBACK_URL = "http://localhost:3000/auth/instagram/callback"
 
   def create
     user = User.find_or_create(auth_info)
