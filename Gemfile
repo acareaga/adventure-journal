@@ -13,7 +13,7 @@ gem "omniauth-instagram"
 gem "figaro"
 gem 'materialize-sass'
 gem 'instagram'
-# gem 'rails_12factor'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug'
