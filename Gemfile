@@ -12,8 +12,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "omniauth-instagram"
 gem "figaro"
 gem 'materialize-sass'
-gem 'rails_12factor'
 gem 'instagram'
+# gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug'
