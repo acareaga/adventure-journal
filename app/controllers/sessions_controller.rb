@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     if user
       Instagram.authorize_url(:redirect_uri => ENV['callback_url'])
       session[:user_id] = user.id
-      redirect_to dashboard_path
+      redirect_to dashboard_path(user.username)
     else
       redirect_to root_path
     end

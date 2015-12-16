@@ -10,7 +10,7 @@ module ApplicationHelper
 
   def user_profile_path
     if current_user
-      link_to "#{current_user.username}", dashboard_path
+      link_to "#{current_user.username}", dashboard_path(current_user.username)
     end
   end
 end
