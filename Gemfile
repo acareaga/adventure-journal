@@ -11,10 +11,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "omniauth-instagram"
 gem 'puma'
-gem "figaro"
+gem 'figaro'
 gem 'materialize-sass'
 gem 'instagram'
-gem 'rails_12factor'
+# gem 'rails_12factor'
+# gem 'webmock'
+# gem 'vcr'
 
 group :development, :test do
   gem 'byebug'

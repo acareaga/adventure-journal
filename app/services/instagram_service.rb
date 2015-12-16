@@ -2,8 +2,8 @@ class InstagramService
   attr_reader :client, :user
 
   def initialize(user)
-    @client = Instagram.client(:access_token => user[:oauth_token])
     @user = user
+    @client = Instagram.client(:access_token => user[:oauth_token])
   end
 
   def user_posts
