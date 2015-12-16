@@ -1,8 +1,8 @@
 <div class="container">
-    <% if current_user %>
-      <%= render "user_profile" %>
-      <%= render "user_recent_posts" %>
-    <% else %>
-      <%= render "login_prompt" %>
-    <% end %>
+  <% if current_user %>
+    <%= render "user_profile" %>
+    <%= render "user_recent_posts" %>
+  <% else %>
+    <%= render "layouts/login_prompt" %>
+  <% end %>
 </div>

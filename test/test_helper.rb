@@ -4,8 +4,8 @@ require 'rails/test_help'
 require "capybara/rails"
 require "minitest/pride"
 require "pry"
-require 'webmock'
-require 'vcr'
+# require 'webmock'
+# require 'vcr'
 
 class ActiveSupport::TestCase
   fixtures :all

@@ -1,8 +1,6 @@
 class DashboardController < ApplicationController
 
   def show
-    if current_user
-      @user_posts = Media.user_posts(current_user)
-    end
+    @user_posts = Media.user_posts(current_user) while current_user
   end
 end
