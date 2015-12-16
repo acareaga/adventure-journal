@@ -7,4 +7,10 @@ module ApplicationHelper
       link_to "login", login_path
     end
   end
+
+  def user_profile_path
+    if current_user
+      link_to "#{current_user.username}", dashboard_path
+    end
+  end
 end

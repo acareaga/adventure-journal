@@ -1,25 +1,7 @@
-
 <div class="container">
   <% if current_user %>
-  <br>
-  <br>
-
-  <div class="row">
-    <% @recent_feed.each do |post| %>
-      <div class="col s4">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" id="dashboard-user-photos" src="<%= post.images.thumbnail.url %>" >
-          </div>
-          <div class="card-reveal">
-
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-
+    <%= render "recent_feed" %>
   <% else %>
-    <div class="col s12"><span class="flow-text"> Login to Start Your Adventure</span></div>
+    <%= render "login_prompt" %>
   <% end %>
 </div>
