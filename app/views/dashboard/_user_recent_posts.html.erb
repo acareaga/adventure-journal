@@ -9,7 +9,7 @@
             <span class="card-title grey-text text-darken-4"><%= post.user[:username] %><i class="material-icons right">close</i></span>
             <p>Favorites: <%= post.likes[:count] %></p>
             <p><a href='<%= current_user.username %>'><%= post.user[:username] %> </a><%= post.caption[:text] %></p>
-            <p><%= post.comments %></p>
+            <p><%= post.comments[:count] %></p>
             <br>
           <a href='/media_like/<%= post.id %>'>Like</a>
           <a href='/media_unlike/<%= post.id %>'>Unlike</a>
