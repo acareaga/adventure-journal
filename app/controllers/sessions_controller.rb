@@ -1,10 +1,9 @@
 class SessionsController < ApplicationController
-  CALLBACK_URL = "http://localhost:3000/auth/instagram/callback"
 
   def create
     user = User.find_or_create(auth_info)
     if user
-      Instagram.authorize_url(:redirect_uri => CALLBACK_URL)
+      Instagram.authorize_url(:redirect_uri => ENV['callback_url'])
       session[:user_id] = user.id
       redirect_to dashboard_path
     else
