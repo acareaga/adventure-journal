@@ -68,6 +68,7 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashie (3.4.3)
+    hurley (0.2)
     i18n (0.7.0)
     instagram (1.1.6)
       faraday (>= 0.7, < 0.10)
@@ -118,6 +119,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
     puma (2.14.0)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -141,11 +144,6 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
-    rails_12factor (0.0.3)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.4)
-    rails_stdout_logging (0.0.4)
     railties (4.2.4)
       actionpack (= 4.2.4)
       activesupport (= 4.2.4)
@@ -198,16 +196,16 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   figaro
+  hurley
   instagram
   jbuilder (~> 2.0)
   jquery-rails
   materialize-sass
   omniauth-instagram
   pg
-  pry
+  pry-rails
   puma
   rails (= 4.2.4)
-  rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

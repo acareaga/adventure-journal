@@ -14,7 +14,7 @@ class ActionDispatch::IntegrationTest
 
   def login_user
     visit root_path
-    click_link "Login"
+    click_link "login"
     fill_in "username", with: "powskiing"
     fill_in "password", with: "password"
     click_link "Log in"

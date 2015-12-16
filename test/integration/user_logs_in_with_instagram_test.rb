@@ -1,6 +1,6 @@
 require "test_helper"
 
-class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
+class UserLogsInWithInstagramTest < ActionDispatch::IntegrationTest
   include Capybara::DSL
 
   def setup
@@ -11,10 +11,10 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
   test "logging in" do
     visit "/"
     assert_equal 200, page.status_code
-    click_link "Login"
+    click_link "login"
     assert_equal "/", current_path
-    assert page.has_content?("Powskiing")
-    assert page.has_link?("Logout")
+    assert page.has_content?("powskiing")
+    assert page.has_link?("logout")
   end
 
   def stub_omniauth
