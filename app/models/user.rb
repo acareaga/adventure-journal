@@ -1,6 +1,5 @@
 class User < ActiveRecord::Base
-  delegate :user_posts, :recent_feed, to: :instagram_client
-
+  
   def self.find_or_create(auth_info)
     user = User.find_or_create_by(uid: auth_info[:uid])
     user.update_attributes(
