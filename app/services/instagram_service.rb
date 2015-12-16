@@ -1,21 +1,17 @@
 class InstagramService
-  attr_reader :connection
+  attr_reader :client, :user
 
-  def initialize
-    @connection = Hurley::Client.new("https://api.instagram.com/v1/")
+  def initialize(user)
+    @user = user
+    @client = Instagram.client(:access_token => user[:oauth_token])
   end
 
-  def user_info(token)
-    parse_json(connection.get("users/self/?access_token=#{token}"))
+  def user_posts
+    client.user_recent_media(user.uid, {:count => 20})
   end
 
-  def search_by_tag(tag, token)
-    parse_json(connection.get("tags/#{tag}/media/recent?access_token=#{token}"))
-  end
-
-  private
-
-  def parse_json(response)
-    JSON.parse(response.body, symbolize_names: true)
+  def recent_feed(params)
+    tags = client.tag_search(params)
+    client.tag_recent_media(tags[0].name)
   end
 end

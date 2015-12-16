@@ -1,21 +1,11 @@
 class Media < ActiveRecord::Base
-  attr_reader :client
+  attr_reader :service
 
-  def self.service
-    InstagramService.new
+  def self.service(user)
+    @service ||= InstagramService.new(user)
   end
 
-  def self.user_info(token)
-    build_object(service.user_info(token))
-  end
-
-  def self.search_by_tag(tag, token)
-    build_object(service.search_by_tag(tag, token))
-  end
-
-  private
-
-  def self.build_object(data)
-    OpenStruct.new(data)
+  def self.user_posts(user)
+    service(user).user_posts
   end
 end

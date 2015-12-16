@@ -1,15 +1,17 @@
 class User < ActiveRecord::Base
+  delegate :user_posts, :recent_feed, to: :instagram_client
 
   def self.find_or_create(auth_info)
     user = User.find_or_create_by(uid: auth_info[:uid])
-    user.oauth_token        = auth_info.credentials.token
-    user.oauth_token_secret = auth_info.credentials.secret
-    user.name               = auth_info.extra.raw_info.full_name
-    user.bio                = auth_info.extra.raw_info.bio
-    user.profile_picture    = auth_info.extra.raw_info.profile_picture
-    user.username           = auth_info.extra.raw_info.username
-    user.website            = auth_info.extra.raw_info.website
-    user.save!
+    user.update_attributes(
+      username:           auth_info.extra.raw_info.username,
+      name:               auth_info.extra.raw_info.full_name,
+      bio:                auth_info.extra.raw_info.bio,
+      profile_picture:    auth_info.extra.raw_info.profile_picture,
+      website:            auth_info.extra.raw_info.website,
+      oauth_token:        auth_info.credentials.token,
+      oauth_token_secret: auth_info.credentials.secret
+    )
     user
   end
 end

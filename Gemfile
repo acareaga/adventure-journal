@@ -15,7 +15,6 @@ gem "figaro"
 gem 'materialize-sass'
 gem 'instagram'
 gem 'rails_12factor'
-gem 'hurley'
 
 group :development, :test do
   gem 'byebug'
