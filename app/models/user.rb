@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  
+
   def self.find_or_create(auth_info)
     user = User.find_or_create_by(uid: auth_info[:uid])
     user.update_attributes(
