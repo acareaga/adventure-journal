@@ -61,6 +61,6 @@ a:hover {
   margin-right: 25px;
 }
 
-.text-muted {
-  color: #90939a;
+.card-image {
+  flex: 1 0 auto;
 }

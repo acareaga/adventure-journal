@@ -20,15 +20,16 @@
           <% @user_posts.each do |post| %>
             <div class="col s4">
               <div class="card">
-                <div class="card-image">
-                  <%= image_tag post.images.standard_resolution.url %>
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" id="dashboard-user-photos" src="<%= post.images.low_resolution.url %>" >
                 </div>
-                <div class="card-content">
-                   Favorites: <%= post.likes[:count] %>
-                </div>
-                <div class="card-action">
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Favorites: <%= post.likes[:count] %><i class="material-icons right">close</i></span>
+                    <p><%= post.caption[:text] %></p>
+                    <p><%= post.comments %></p>
+                    <br>
                   <a href='/media_like/<%= post.id %>'>Like</a>
-                  <a href='/media_unlike/<%= post.id %>'>UnLike</a>
+                  <a href='/media_unlike/<%= post.id %>'>Unlike</a>
                 </div>
               </div>
             </div>
@@ -36,6 +37,6 @@
         </div>
 
     <% else %>
-      <div class="col s12"><span class="flow-text"> Login to Adventure </span></div>
+      <div class="col s12"><span class="flow-text"> Login to Start Your Adventure </span></div>
     <% end %>
 </div>
