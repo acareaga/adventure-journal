@@ -2,16 +2,18 @@
 <br>
 
 <div class="row">
-  <!-- <#% @recent_feed.each do |post| %>
+  <!-- <%#= @user_info[:data][:counts][:media] %> -->
+
+  <% @recent_feed.each do |post| %>
     <div class="col s4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" id="dashboard-user-photos" src="<#%= post.images.thumbnail.url %>" >
+          <img class="activator" id="dashboard-user-photos" src="<%= post.images.thumbnail.url %>" >
         </div>
         <div class="card-reveal">
 
         </div>
       </div>
     </div>
-  <#% end %> -->
+  <% end %>
 </div>
