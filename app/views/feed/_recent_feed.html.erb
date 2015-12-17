@@ -1,8 +1,14 @@
 <br>
 <br>
-
+<div class="container">
+  <%= form_tag("/", method: "post") do %>
+    <%= label_tag(:q, "Search") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+</div>
+<br>
 <div class="row">
-
   <% @recent_feed.each do |post| %>
     <div class="col s4">
       <div class="card">

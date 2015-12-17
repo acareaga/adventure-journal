@@ -10,8 +10,8 @@ class InstagramService
     client.user_recent_media(user.uid, {:count => 20})
   end
 
-  def search_by_tag
-    tags = client.tag_search('berner')
+  def search_by_tag(tag)
+    tags = client.tag_search(tag)
     client.tag_recent_media(tags[0].name)
   end
 end

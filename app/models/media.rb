@@ -9,7 +9,7 @@ class Media < ActiveRecord::Base
     service(user).user_posts
   end
 
-  def self.search_by_tag(user)
-    service(user).search_by_tag
+  def self.search_by_tag(user, tag)
+    service(user).search_by_tag(tag)
   end
 end
