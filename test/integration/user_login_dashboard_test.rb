@@ -9,7 +9,7 @@ class UserLoginDashboardTest < ActionDispatch::IntegrationTest
   end
 
   test "user can login and see dashboard of recent photos" do
-    VCR.use_cassette("dashboard#show") do
+    VCR.use_cassette("dashboard#show", :record => :new_episodes) do
       visit "/"
 
       assert_equal 200, page.status_code
@@ -25,7 +25,7 @@ class UserLoginDashboardTest < ActionDispatch::IntegrationTest
   end
 
   test "user can logout from dashboard and is redirected to root path" do
-    VCR.use_cassette("dashboard#show") do
+    VCR.use_cassette("dashboard#show", :record => :new_episodes) do
       visit "/"
 
       click_link "login"

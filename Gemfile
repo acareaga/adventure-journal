@@ -20,7 +20,6 @@ gem 'pry-rails'
 group :test do
   gem 'byebug'
   gem 'capybara'
-  gem 'pry-rails'
   gem 'webmock'
   gem 'vcr'
   gem 'simplecov'

@@ -3,7 +3,7 @@ require 'test_helper'
 class MediaTest < ActiveSupport::TestCase
 
   test "you can retrieve a user's posts" do
-    VCR.use_cassette("media#user_posts") do
+    VCR.use_cassette("media#user_posts", :record => :new_episodes) do
       posts = Media.user_posts(users(:one))
       post = posts.first
 
@@ -15,7 +15,7 @@ class MediaTest < ActiveSupport::TestCase
   end
 
   test "you can search posts by tag" do
-    VCR.use_cassette("media#search_by_tag") do
+    VCR.use_cassette("media#search_by_tag", :record => :new_episodes) do
       posts = Media.search_by_tag(users(:one), "colorado")
       post = posts.first
 

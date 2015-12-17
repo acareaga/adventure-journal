@@ -9,7 +9,7 @@ class UserLoginFeedTest < ActionDispatch::IntegrationTest
   end
 
   test "user can login and see feed of tagged photos" do
-    VCR.use_cassette("feed#index") do
+    VCR.use_cassette("feed#index", :record => :new_episodes) do
       visit "/"
 
       assert_equal 200, page.status_code
@@ -30,23 +30,24 @@ class UserLoginFeedTest < ActionDispatch::IntegrationTest
     end
   end
 
-  # test "user can search photos by tag" do
-  #   VCR.use_cassette("feed#show") do
-  #     visit "/"
-  #
-  #     click_link "login"
-  #     click_link "AdventureJournal"
-  #
-  #     within "#search-field" do
-  #       fill_in("#search-box", with: "skiing").send_keys(:return)
-  #     end
-  #
-  #     within("#berners-love-snow-days-cowx-denver-berner-bernesemountaindog-snowday") do
-  #       assert page.has_content?("powskiing")
-  #       assert page.has_content?("Favorites: 25")
-  #       assert page.has_content?("Comments: 0")
-  #       assert page.has_content?("Berners love snow days")
-  #     end
-  #   end
-  # end
+  test "user can search photos by tag" do
+    VCR.use_cassette("feed#show", :record => :new_episodes) do
+      visit "/"
+
+      click_link "login"
+      click_link "AdventureJournal"
+
+      within "#search-field" do
+        fill_in("q", with: "skiing" + "\n")
+        click_button "Search"
+      end
+
+      within("#way-better-than-i-expected-today-skicolorado-cowx-skiing-getoutside-keystone") do
+        assert page.has_content?("powskiing")
+        assert page.has_content?("Favorites: 32")
+        assert page.has_content?("Comments: 0")
+        assert page.has_content?("#skicolorado #cowx #skiing")
+      end
+    end
+  end
 end

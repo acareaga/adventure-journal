@@ -27,6 +27,10 @@
       </nav>
     </header>
     <br>
+    <% flash.each do |type, msg| %>
+        <%= content_tag :div, sanitize(msg), class: " flash flash_#{type}" %>
+    <% end %>
+    <br>
     <%= yield %>
     <br>
     </main>​
