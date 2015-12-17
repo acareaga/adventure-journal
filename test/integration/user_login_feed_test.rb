@@ -9,7 +9,7 @@ class UserLoginFeedTest < ActionDispatch::IntegrationTest
   end
 
   test "user can login and see feed of tagged photos" do
-    VCR.use_cassette("feed#show") do
+    VCR.use_cassette("feed#index") do
       visit "/"
 
       assert_equal 200, page.status_code

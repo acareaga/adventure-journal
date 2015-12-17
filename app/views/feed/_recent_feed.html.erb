@@ -1,11 +1,19 @@
 <br>
 <br>
-<div class="container">
-  <%= form_tag("/", method: "post") do %>
-    <%= label_tag(:q, "Search") %>
-    <%= text_field_tag(:q) %>
-    <%= submit_tag("Search") %>
-  <% end %>
+
+<div class="row">
+  <div class="center">
+    <div class="col m4 offset-m4">
+      <nav class="search white z-depth-1" id="search-field">
+        <%= form_tag("/", class: "form-inline", method: "post") do %>
+          <div class="form-group input-field">
+            <%= text_field_tag :q, nil, placeholder: 'Enter search term...' %>
+            <%= hidden_field "Search", class: "hidden" %>
+          </div>
+        <% end %>
+      </nav>
+    </div>
+  </div>
 </div>
 <br>
 <div class="row">

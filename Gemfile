@@ -14,16 +14,17 @@ gem 'puma'
 gem 'figaro'
 gem 'materialize-sass'
 gem 'instagram'
-gem 'launchy'
 # gem 'rails_12factor'
-gem 'webmock'
-gem 'vcr'
-gem 'simplecov', :require => false, :group => :test
+
 
 group :development, :test do
   gem 'byebug'
   gem 'capybara'
   gem 'pry-rails'
+  gem 'webmock'
+  gem 'vcr'
+  gem 'simplecov'
+  gem 'launchy'
 end
 
 group :development do
