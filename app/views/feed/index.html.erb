@@ -1,5 +1,6 @@
 <div class="container">
   <% if current_user %>
+    <%= render "search_form" %>
     <%= render "recent_feed" %>
   <% else %>
     <%= render "layouts/login_prompt" %>

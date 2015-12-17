@@ -1,0 +1,17 @@
+<br>
+<br>
+<div class="row">
+  <div class="center">
+    <div class="col s8 offset-m2">
+      <nav class="search white z-depth-0" id="search-field">
+        <%= form_tag("/", class: "form-inline", method: "post") do %>
+          <div class="form-group input-field">
+            <%= text_field_tag :q, nil, placeholder: 'Enter search term...' %>
+            <%= hidden_field "Search", class: "hidden" %>
+          </div>
+        <% end %>
+      </nav>
+    </div>
+  </div>
+</div>
+<br>

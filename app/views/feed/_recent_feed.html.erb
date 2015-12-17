@@ -1,21 +1,3 @@
-<br>
-<br>
-
-<div class="row">
-  <div class="center">
-    <div class="col m4 offset-m4">
-      <nav class="search white z-depth-1" id="search-field">
-        <%= form_tag("/", class: "form-inline", method: "post") do %>
-          <div class="form-group input-field">
-            <%= text_field_tag :q, nil, placeholder: 'Enter search term...' %>
-            <%= hidden_field "Search", class: "hidden" %>
-          </div>
-        <% end %>
-      </nav>
-    </div>
-  </div>
-</div>
-<br>
 <div class="row">
   <% @recent_feed.each do |post| %>
     <div class="col s4">
@@ -23,7 +5,7 @@
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" id="dashboard-user-photos" src="<%= post.images.thumbnail.url %>" >
         </div>
-        <div class="card-reveal">
+        <div class="card-reveal" id="<%= post.caption.text.parameterize %>">
           <span class="card-title grey-text text-darken-4"><%= post.user.username %><i class="material-icons right">close</i></span>
           <p>Favorites: <%= post.likes.count %></p>
           <p><a href='<%= post.user.username %>'><%= post.user.username %> </a><%= post.caption.text %></p>

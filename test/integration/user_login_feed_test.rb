@@ -17,8 +17,14 @@ class UserLoginFeedTest < ActionDispatch::IntegrationTest
       click_link "login"
       click_link "AdventureJournal"
 
+      within("#berners-love-snow-days-cowx-denver-berner-bernesemountaindog-snowday") do
+        assert page.has_content?("powskiing")
+        assert page.has_content?("Favorites: 1")
+        assert page.has_content?("Comments: 1")
+        assert page.has_content?("Berners love snow days")
+      end
+
       assert_equal "/", current_path
-      assert page.has_content?("Search")
       assert page.has_link?("aaronturing")
       assert page.has_link?("logout")
     end
