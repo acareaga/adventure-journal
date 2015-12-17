@@ -17,10 +17,16 @@ class UserLoginDashboardTest < ActionDispatch::IntegrationTest
       click_link "login"
 
       assert_equal "/aaronturing", current_path
-      assert page.has_content?("aaronturing")
       assert page.has_content?("Aaron - Turing test")
       assert page.has_link?("aaronturing")
       assert page.has_link?("logout")
+
+      within("#snowing-hard") do
+        assert page.has_content?("aaronturing")
+        assert page.has_content?("Snowing hard!")
+        assert page.has_content?("Favorites: 0")
+        assert page.has_content?("Comments: 0")
+      end
     end
   end
 

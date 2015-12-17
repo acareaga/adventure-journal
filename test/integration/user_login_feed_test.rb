@@ -42,6 +42,8 @@ class UserLoginFeedTest < ActionDispatch::IntegrationTest
         click_button "Search"
       end
 
+      assert_equal results_path, current_path
+
       within("#way-better-than-i-expected-today-skicolorado-cowx-skiing-getoutside-keystone") do
         assert page.has_content?("powskiing")
         assert page.has_content?("Favorites: 32")

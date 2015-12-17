@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  
+
   test "you can create a user with valid attributes" do
     user = User.create(  username:           "lolabeans",
                   name:               "Lola",
@@ -17,10 +17,9 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "you can find an existing user in the database" do
-    user = users(:one)
+    user = User.find_by(name: "Aaron")
 
     assert_equal 980190962, user.id
-    assert_equal "Aaron", user.name
     assert user.oauth_token
     refute user.oauth_token_secret
   end

@@ -5,7 +5,7 @@
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" id="dashboard-user-photos" src="<%= post.images.thumbnail.url %>" >
         </div>
-        <div class="card-reveal">
+        <div class="card-reveal" id="<%= post.caption.text.parameterize %>">
           <span class="card-title grey-text text-darken-4"><%= post.user.username %><i class="material-icons right">close</i></span>
           <p>Favorites: <%= post.likes[:count] %></p>
           <p><a href='<%= post.user.username %>'><%= post.user.username %> </a><%= post.caption.text %></p>
