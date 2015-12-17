@@ -8,6 +8,10 @@ class FeedController < ApplicationController
 
   def create
     @recent_feed = Media.search_by_tag(current_user, params[:q])
-    redirect_to root_path
+    redirect_to results_path(params)
+  end
+
+  def show
+    @recent_feed = Media.search_by_tag(current_user, params[:q])
   end
 end

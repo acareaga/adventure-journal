@@ -14,10 +14,10 @@ gem 'puma'
 gem 'figaro'
 gem 'materialize-sass'
 gem 'instagram'
-# gem 'rails_12factor'
+gem 'rails_12factor'
+gem 'pry-rails'
 
-
-group :development, :test do
+group :test do
   gem 'byebug'
   gem 'capybara'
   gem 'pry-rails'
