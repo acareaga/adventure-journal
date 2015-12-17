@@ -17,6 +17,7 @@ class UserLogsInWithInstagramTest < ActionDispatch::IntegrationTest
     assert_equal "/aaronturing", current_path
     assert page.has_content?("aaronturing")
     assert page.has_content?("Aaron - Turing test")
+    assert page.has_link?("aaronturing")
     assert page.has_link?("logout")
   end
 end
