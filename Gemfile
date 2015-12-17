@@ -16,8 +16,9 @@ gem 'materialize-sass'
 gem 'instagram'
 gem 'launchy'
 # gem 'rails_12factor'
-# gem 'webmock'
-# gem 'vcr'
+gem 'webmock'
+gem 'vcr'
+gem 'simplecov', :require => false, :group => :test
 
 group :development, :test do
   gem 'byebug'

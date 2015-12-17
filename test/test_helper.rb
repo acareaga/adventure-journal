@@ -4,16 +4,18 @@ require 'rails/test_help'
 require "capybara/rails"
 require "minitest/pride"
 require "pry"
-# require 'webmock'
-# require 'vcr'
+require 'webmock'
+require 'vcr'
+require 'simplecov'
+SimpleCov.start "rails"
 
 class ActiveSupport::TestCase
   fixtures :all
 
-  # VCR.configure do |config|
-  #   config.cassette_library_dir = "test/cassettes"
-  #   config.hook_into :webmock
-  # end
+  VCR.configure do |config|
+    config.cassette_library_dir = "test/cassettes"
+    config.hook_into :webmock
+  end
 end
 
 class ActionDispatch::IntegrationTest

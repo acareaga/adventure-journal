@@ -9,7 +9,6 @@ class InstagramServiceTest < ActiveSupport::TestCase
   #
   # test "#user_posts" do
   #   VCR.use_cassette("instagram_service#user_posts") do
-  #   binding.pry
   #     post = service.posts.first
   #
   #     assert_equal "powskiing", post.user.username
