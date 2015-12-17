@@ -9,10 +9,14 @@ class UserLogsInWithInstagramTest < ActionDispatch::IntegrationTest
   end
 
   test "logging in" do
-    skip
     visit "/"
     assert_equal 200, page.status_code
-    assert_equal "/", current_path
+
+    click_link "login"
+
+    assert_equal "/aaronturing", current_path
+    assert page.has_content?("aaronturing")
+    assert page.has_content?("Aaron - Turing test")
     assert page.has_link?("logout")
   end
 
