@@ -19,11 +19,27 @@ end
 class ActionDispatch::IntegrationTest
   include Capybara::DSL
 
-  def login_user
-    visit root_path
-    click_link "login"
-    fill_in "username", with: "aaronturing"
-    fill_in "password", with: "turingpass"
-    click_link "Log in"
+  def stub_omniauth
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.mock_auth[:instagram] = OmniAuth::AuthHash.new({
+      "provider"=>"instagram",
+      "uid"=>"2331596714",
+      "info"=>{
+        "nickname"=>"aaronturing",
+        "name"=>"Aaron",
+        "email"=>nil,
+        "image"=>"https://scontent.cdninstagram.com/hphotos-xtp1/t51.2885-19/s150x150/12338859_189639354716935_1184283222_a.jpg",
+        "bio"=>"Turing test",
+        "website"=>""},
+      "credentials"=>{"token"=>"2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779", "expires"=>false},
+      "extra"=>{
+        "raw_info"=>{
+          "username"=>"aaronturing",
+          "bio"=>"Turing test",
+          "website"=>"",
+          "profile_picture"=>"https://scontent.cdninstagram.com/hphotos-xtp1/t51.2885-19/s150x150/12338859_189639354716935_1184283222_a.jpg",
+          "full_name"=>"Aaron",
+          "id"=>"2331596714"
+          }}})
   end
 end
