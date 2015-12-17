@@ -1,6 +1,6 @@
 require './test/test_helper'
 
-class UserLogsInWithInstagramTest < ActionDispatch::IntegrationTest
+class UserLoginFeedTest < ActionDispatch::IntegrationTest
   include Capybara::DSL
 
   def setup
@@ -8,17 +8,17 @@ class UserLogsInWithInstagramTest < ActionDispatch::IntegrationTest
     stub_omniauth
   end
 
-  test "user can login and see dashboard" do
-    VCR.use_cassette("dashboard#show") do
+  test "user can login and see feed of tagged photos" do
+    VCR.use_cassette("feed#show") do
       visit "/"
 
       assert_equal 200, page.status_code
 
       click_link "login"
+      click_link "AdventureJournal"
 
-      assert_equal "/aaronturing", current_path
-      assert page.has_content?("aaronturing")
-      assert page.has_content?("Aaron - Turing test")
+      assert_equal "/", current_path
+      assert page.has_content?("Search")
       assert page.has_link?("aaronturing")
       assert page.has_link?("logout")
     end

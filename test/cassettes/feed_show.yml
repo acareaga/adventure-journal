@@ -1,0 +1,193 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/2331596714/media/recent.json?access_token=2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779&count=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Instagram Ruby Gem 1.1.6
+      Authorization:
+      - Token token="2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '495'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 17 Dec 2015 02:31:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=cdf9f57a5ba986b3f3f639bb4a34eda8; expires=Thu, 15-Dec-2016 02:31:29
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Thu, 17-Dec-2015 03:31:29 GMT; Max-Age=3600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '594'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination":{},"meta":{"code":200},"data":[{"attribution":null,"tags":[],"type":"image","location":{"latitude":39.6423607,"name":"A-Basin
+        Ski \u0026 Snowboard Area","longitude":-105.8717499,"id":228111834},"comments":{"count":0},"filter":"Normal","created_time":"1450311071","link":"https:\/\/www.instagram.com\/p\/_X1E-Cms4T\/","likes":{"count":0},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s320x320\/e35\/12331514_156113021416289_1883021768_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s150x150\/e35\/12331514_156113021416289_1883021768_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s640x640\/sh0.08\/e35\/12331514_156113021416289_1883021768_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1450311071","text":"Snowing
+        hard!","from":{"username":"aaronturing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-19\/s150x150\/12338859_189639354716935_1184283222_a.jpg","id":"2331596714","full_name":"Aaron"},"id":"1141614472202997473"},"user_has_liked":false,"id":"1141614468520398355_2331596714","user":{"username":"aaronturing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-19\/s150x150\/12338859_189639354716935_1184283222_a.jpg","id":"2331596714","full_name":"Aaron"}}]}'
+    http_version: 
+  recorded_at: Thu, 17 Dec 2015 02:31:28 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/tags/search.json?access_token=2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779&q=berner
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Instagram Ruby Gem 1.1.6
+      Authorization:
+      - Token token="2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '494'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 17 Dec 2015 02:31:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=5721af9a198b77e7f33638af5edbee00; expires=Thu, 15-Dec-2016 02:31:29
+        GMT; Max-Age=31449600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '509'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"code":200},"data":[{"media_count":241928.0,"name":"berner"},{"media_count":65881.0,"name":"bernersennen"},{"media_count":23346.0,"name":"berneroberland"},{"media_count":16656.0,"name":"berners"},{"media_count":36671.0,"name":"bernersennenhund"},{"media_count":28403.0,"name":"berneroftheday"},{"media_count":16535.0,"name":"bernerpuppy"},{"media_count":21829.0,"name":"bernerlove"},{"media_count":12021.0,"name":"berner415"},{"media_count":8485.0,"name":"bernerstavern"},{"media_count":36342.0,"name":"bernersofinstagram"},{"media_count":1716.0,"name":"bernersennenhond"},{"media_count":5442.0,"name":"bernerpup"},{"media_count":4830.0,"name":"bernerdaily"},{"media_count":3966.0,"name":"bernerlife"},{"media_count":978.0,"name":"bernercookies"},{"media_count":3919.0,"name":"bernerofinstagram"},{"media_count":2942.0,"name":"bernerbaby"},{"media_count":843.0,"name":"bernerie"},{"media_count":7772.0,"name":"instaberner"},{"media_count":5581.0,"name":"bernersoftheday"},{"media_count":1766.0,"name":"bernersenne"},{"media_count":2617.0,"name":"myberner"},{"media_count":1623.0,"name":"bernerteam"},{"media_count":905.0,"name":"bernerlovers"},{"media_count":5948.0,"name":"dailyberner"},{"media_count":1917.0,"name":"bernermountaindog"},{"media_count":1809.0,"name":"bernergram"},{"media_count":1400.0,"name":"bernersenner"},{"media_count":3012.0,"name":"officialberners"},{"media_count":4126.0,"name":"babyberner"},{"media_count":1322.0,"name":"bernerscookies"},{"media_count":3814.0,"name":"carlberner"},{"media_count":791.0,"name":"bernermix"},{"media_count":1114.0,"name":"bernersdaily"},{"media_count":371.0,"name":"bernerd"},{"media_count":649.0,"name":"bernerconcert"},{"media_count":312.0,"name":"bernera"},{"media_count":486.0,"name":"bernermunster"},{"media_count":698.0,"name":"bernerpuppies"},{"media_count":418.0,"name":"bernerse"},{"media_count":460.0,"name":"berneray"},{"media_count":1635.0,"name":"bernersofinsta"},{"media_count":441.0,"name":"berner916"},{"media_count":435.0,"name":"bernerproblems"},{"media_count":453.0,"name":"bernernation"},{"media_count":1491.0,"name":"bernersofig"},{"media_count":2608.0,"name":"elixiacarlberner"},{"media_count":874.0,"name":"happyberners"},{"media_count":668.0,"name":"bernerlover"}]}'
+    http_version: 
+  recorded_at: Thu, 17 Dec 2015 02:31:29 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/tags/berner/media/recent.json?access_token=2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Instagram Ruby Gem 1.1.6
+      Authorization:
+      - Token token="2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '493'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 17 Dec 2015 02:31:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=bba5f6c8499c512272753a60716f5715; expires=Thu, 15-Dec-2016 02:31:30
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Thu, 17-Dec-2015 03:31:30 GMT; Max-Age=3600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2203'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination":{"next_min_id":"1140622512473402752","deprecation_warning":"next_max_id
+        and min_id are deprecated for this endpoint; use min_tag_id and max_tag_id
+        instead","min_tag_id":"1140622512473402752"},"meta":{"code":200},"data":[{"attribution":null,"tags":["snowday","cowx","berner","denver","bernesemountaindog"],"type":"image","location":{"latitude":39.762675715,"name":"City
+        of Cuernavaca Park","longitude":-105.001125702,"id":2491952},"comments":{"count":0},"filter":"Normal","created_time":"1450192820","link":"https:\/\/www.instagram.com\/p\/_UTiG-ym2A\/","likes":{"count":25},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xap1\/t51.2885-15\/s320x320\/e35\/12346061_452007244988175_1912995121_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xfa1\/t51.2885-15\/s150x150\/e35\/c0.135.1080.1080\/12357868_832840163492045_1016739451_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xap1\/t51.2885-15\/s640x640\/sh0.08\/e35\/12346061_452007244988175_1912995121_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1450192820","text":"Berners
+        love snow days #cowx #denver #berner #bernesemountaindog #snowday","from":{"username":"powskiing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xap1\/t51.2885-19\/s150x150\/12145609_1664024740502430_1985352303_a.jpg","id":"15489762","full_name":"Aaron
+        Careaga"},"id":"1140622523034659931"},"user_has_liked":false,"id":"1140622512473402752_15489762","user":{"username":"powskiing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xap1\/t51.2885-19\/s150x150\/12145609_1664024740502430_1985352303_a.jpg","id":"15489762","full_name":"Aaron
+        Careaga"}},{"attribution":null,"tags":["skicolorado","getoutside","colorado","bmd","abasin","berner"],"type":"image","location":{"latitude":39.641666667,"name":"Arapahoe
+        Basin","longitude":-105.871666667,"id":214083066},"comments":{"count":1},"filter":"Normal","created_time":"1448729483","link":"https:\/\/www.instagram.com\/p\/-oscBxym_L\/","likes":{"count":40},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-15\/s320x320\/e35\/12317732_680573765416032_2121767245_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-15\/s150x150\/e35\/12317732_680573765416032_2121767245_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-15\/s640x640\/sh0.08\/e35\/12317732_680573765416032_2121767245_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1448729483","text":"berner
+        spotted at the basin \ud83d\ude0d #bmd #skicolorado #getoutside #berner #colorado
+        #abasin","from":{"username":"powskiing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xap1\/t51.2885-19\/s150x150\/12145609_1664024740502430_1985352303_a.jpg","id":"15489762","full_name":"Aaron
+        Careaga"},"id":"1128353822939967126"},"user_has_liked":false,"id":"1128347146757238731_15489762","user":{"username":"powskiing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xap1\/t51.2885-19\/s150x150\/12145609_1664024740502430_1985352303_a.jpg","id":"15489762","full_name":"Aaron
+        Careaga"}},{"attribution":null,"tags":["berner","bernersofcolorado","bernesemountaindog"],"type":"image","location":null,"comments":{"count":1},"filter":"Normal","created_time":"1448312096","link":"https:\/\/www.instagram.com\/p\/-cQVbCDI_A\/","likes":{"count":36},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xfp1\/t51.2885-15\/s320x320\/e35\/12230810_1679367215669587_524582363_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-15\/s150x150\/e35\/c0.113.1080.1080\/12230899_1510310295929302_298589830_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xfp1\/t51.2885-15\/s640x640\/sh0.08\/e35\/12230810_1679367215669587_524582363_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1448312096","text":"Girls
+        will be girls. #bernesemountaindog #bernersofcolorado #berner","from":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"},"id":"1124845858233028248"},"user_has_liked":false,"id":"1124845847814377408_16510802","user":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"}},{"attribution":null,"tags":["keystone","berner","bernersofcolorado","bernesemountaindog"],"type":"image","location":{"latitude":39.606344408,"name":"Keystone
+        Resort","longitude":-105.942703345,"id":861996},"comments":{"count":1},"filter":"Normal","created_time":"1448148335","link":"https:\/\/www.instagram.com\/p\/-XX_EFDI1p\/","likes":{"count":53},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpa1\/t51.2885-15\/s320x320\/e35\/12224382_901961029881600_554489728_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpa1\/t51.2885-15\/s150x150\/e35\/12224382_901961029881600_554489728_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpa1\/t51.2885-15\/s640x640\/sh0.08\/e35\/12224382_901961029881600_554489728_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1448148335","text":"Happy
+        \ud83d\ude0a #berner #bernersofcolorado #bernesemountaindog #keystone","from":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"},"id":"1123472127682186253"},"user_has_liked":false,"id":"1123472120828693865_16510802","user":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"}},{"attribution":null,"tags":["berner","sleepy","bernersofcolorado","bernesemountaindog"],"type":"image","location":null,"comments":{"count":1},"filter":"Normal","created_time":"1447799260","link":"https:\/\/www.instagram.com\/p\/-M-LdfjI9G\/","likes":{"count":41},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpa1\/t51.2885-15\/s320x320\/e35\/11930810_1710579135838535_1576982889_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpa1\/t51.2885-15\/s150x150\/e35\/11930810_1710579135838535_1576982889_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpa1\/t51.2885-15\/s640x640\/sh0.08\/e35\/11930810_1710579135838535_1576982889_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1447799260","text":"Berner
+        Problems  #sleepy #bernesemountaindog #berner #bernersofcolorado","from":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"},"id":"1120543880728316972"},"user_has_liked":false,"id":"1120543873774161734_16510802","user":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"}},{"attribution":null,"tags":["thinksnow","skicolorado","berner","colorado","bernesemountaindog"],"type":"image","location":{"latitude":39.6423607,"name":"A-Basin
+        Ski \u0026 Snowboard Area","longitude":-105.8717499,"id":228111834},"comments":{"count":0},"filter":"Reyes","created_time":"1446407237","link":"https:\/\/www.instagram.com\/p\/9jfGzBDI3G\/","likes":{"count":56},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s320x320\/e35\/12145059_1680540598860613_2049067764_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-15\/s150x150\/e35\/c0.135.1080.1080\/12145042_1511769929134692_683832478_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s640x640\/sh0.08\/e35\/12145059_1680540598860613_2049067764_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1446407237","text":"Best
+        Friends \ud83d\udc36 #bernesemountaindog #skicolorado  #thinksnow #colorado
+        #berner","from":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"},"id":"1108866749396978985"},"user_has_liked":false,"id":"1108866739800411590_16510802","user":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"}},{"attribution":null,"tags":["berner","myheart","bernesemountaindog"],"type":"image","location":null,"comments":{"count":1},"filter":"Gingham","created_time":"1445309855","link":"https:\/\/www.instagram.com\/p\/9CyA_7jI2W\/","likes":{"count":40},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s320x320\/e35\/12145454_182776575393983_1312507325_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s150x150\/e35\/12145454_182776575393983_1312507325_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s640x640\/sh0.08\/e35\/12145454_182776575393983_1312507325_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.815625,"x":0.2015625},"user":{"username":"powskiing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xap1\/t51.2885-19\/s150x150\/12145609_1664024740502430_1985352303_a.jpg","id":"15489762","full_name":"Aaron
+        Careaga"}}],"caption":{"created_time":"1445309855","text":"Berner\u0026Boy\ud83d\ude0d
+        #myheart #bernesemountaindog #berner","from":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"},"id":"1099661236637568725"},"user_has_liked":false,"id":"1099661230002179478_16510802","user":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"}},{"attribution":null,"tags":["sassy","berner","bernesemountaindoglover","bmd","bernesemountaindog"],"type":"image","location":null,"comments":{"count":1},"filter":"Normal","created_time":"1439694267","link":"https:\/\/www.instagram.com\/p\/6bbIaMDI8S\/","likes":{"count":47},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xfa1\/t51.2885-15\/s320x320\/e35\/11875319_149393522064125_435994165_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xfa1\/t51.2885-15\/s150x150\/e35\/11875319_149393522064125_435994165_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xfa1\/t51.2885-15\/s640x640\/sh0.08\/e35\/11875319_149393522064125_435994165_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1439694267","text":"Bernerttuide
+        \ud83d\udc81\ud83c\udffc #sassy #berner #bernesemountaindog #bmd #bernesemountaindoglover","from":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"},"id":"1063887177912192085"},"user_has_liked":false,"id":"1052554263052193554_16510802","user":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"}},{"attribution":null,"tags":["thinksshesacat","berner","bmd","bernesemountaindog"],"type":"image","location":null,"comments":{"count":0},"filter":"Reyes","created_time":"1438820779","link":"https:\/\/www.instagram.com\/p\/6BZFZnjI6S\/","likes":{"count":44},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpt1\/t51.2885-15\/s320x320\/e35\/11379186_1686824621548174_1890635742_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpt1\/t51.2885-15\/s150x150\/e35\/11379186_1686824621548174_1890635742_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xpt1\/t51.2885-15\/s640x640\/sh0.08\/e35\/11379186_1686824621548174_1890635742_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1438820779","text":"Lola
+        Beans #berner #bernesemountaindog #bmd #thinksshesacat","from":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"},"id":"1045226913956400511"},"user_has_liked":false,"id":"1045226910793895570_16510802","user":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
+        Careaga"}}]}'
+    http_version: 
+  recorded_at: Thu, 17 Dec 2015 02:31:29 GMT
+recorded_with: VCR 3.0.0
