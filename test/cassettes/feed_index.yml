@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '460'
+      - '447'
       Content-Language:
       - en
       Expires:
@@ -35,13 +35,13 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 17 Dec 2015 06:40:12 GMT
+      - Thu, 17 Dec 2015 06:48:43 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=48258defbb670397c94b9c051edc86ec; expires=Thu, 15-Dec-2016 06:40:12
+      - csrftoken=f918f460756e8feb3a93dc720238e425; expires=Thu, 15-Dec-2016 06:48:43
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 17-Dec-2015 07:40:12 GMT; Max-Age=3600; Path=/
+      - s_network=; expires=Thu, 17-Dec-2015 07:48:43 GMT; Max-Age=3600; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -52,7 +52,7 @@ http_interactions:
         Ski \u0026 Snowboard Area","longitude":-105.8717499,"id":228111834},"comments":{"count":0},"filter":"Normal","created_time":"1450311071","link":"https:\/\/www.instagram.com\/p\/_X1E-Cms4T\/","likes":{"count":0},"images":{"low_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s320x320\/e35\/12331514_156113021416289_1883021768_n.jpg","width":320,"height":320},"thumbnail":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s150x150\/e35\/12331514_156113021416289_1883021768_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https:\/\/scontent.cdninstagram.com\/hphotos-xat1\/t51.2885-15\/s640x640\/sh0.08\/e35\/12331514_156113021416289_1883021768_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1450311071","text":"Snowing
         hard!","from":{"username":"aaronturing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-19\/s150x150\/12338859_189639354716935_1184283222_a.jpg","id":"2331596714","full_name":"Aaron"},"id":"1141614472202997473"},"user_has_liked":false,"id":"1141614468520398355_2331596714","user":{"username":"aaronturing","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtp1\/t51.2885-19\/s150x150\/12338859_189639354716935_1184283222_a.jpg","id":"2331596714","full_name":"Aaron"}}]}'
     http_version: 
-  recorded_at: Thu, 17 Dec 2015 06:40:12 GMT
+  recorded_at: Thu, 17 Dec 2015 06:48:43 GMT
 - request:
     method: get
     uri: https://api.instagram.com/v1/tags/search.json?access_token=2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779&q=berner
@@ -74,7 +74,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '459'
+      - '446'
       Content-Language:
       - en
       Expires:
@@ -88,21 +88,21 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 17 Dec 2015 06:40:13 GMT
+      - Thu, 17 Dec 2015 06:48:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=c7be15357969557fa651a7aa7f629fe5; expires=Thu, 15-Dec-2016 06:40:13
+      - csrftoken=4d1a9525dec4165305a2dfd27abac291; expires=Thu, 15-Dec-2016 06:48:44
         GMT; Max-Age=31449600; Path=/
       Connection:
       - keep-alive
       Content-Length:
-      - '502'
+      - '501'
     body:
       encoding: ASCII-8BIT
-      string: '{"meta":{"code":200},"data":[{"media_count":242388.0,"name":"berner"},{"media_count":65854.0,"name":"bernersennen"},{"media_count":23347.0,"name":"berneroberland"},{"media_count":16661.0,"name":"berners"},{"media_count":36670.0,"name":"bernersennenhund"},{"media_count":28606.0,"name":"berneroftheday"},{"media_count":16503.0,"name":"bernerpuppy"},{"media_count":21816.0,"name":"bernerlove"},{"media_count":12054.0,"name":"berner415"},{"media_count":8485.0,"name":"bernerstavern"},{"media_count":36346.0,"name":"bernersofinstagram"},{"media_count":1716.0,"name":"bernersennenhond"},{"media_count":5444.0,"name":"bernerpup"},{"media_count":4831.0,"name":"bernerdaily"},{"media_count":3969.0,"name":"bernerlife"},{"media_count":980.0,"name":"bernercookies"},{"media_count":3919.0,"name":"bernerofinstagram"},{"media_count":2943.0,"name":"bernerbaby"},{"media_count":843.0,"name":"bernerie"},{"media_count":7773.0,"name":"instaberner"},{"media_count":5581.0,"name":"bernersoftheday"},{"media_count":1766.0,"name":"bernersenne"},{"media_count":2617.0,"name":"myberner"},{"media_count":1623.0,"name":"bernerteam"},{"media_count":905.0,"name":"bernerlovers"},{"media_count":5948.0,"name":"dailyberner"},{"media_count":1917.0,"name":"bernermountaindog"},{"media_count":1810.0,"name":"bernergram"},{"media_count":1400.0,"name":"bernersenner"},{"media_count":3013.0,"name":"officialberners"},{"media_count":4128.0,"name":"babyberner"},{"media_count":1323.0,"name":"bernerscookies"},{"media_count":3814.0,"name":"carlberner"},{"media_count":792.0,"name":"bernermix"},{"media_count":1114.0,"name":"bernersdaily"},{"media_count":371.0,"name":"bernerd"},{"media_count":649.0,"name":"bernerconcert"},{"media_count":312.0,"name":"bernera"},{"media_count":486.0,"name":"bernermunster"},{"media_count":699.0,"name":"bernerpuppies"},{"media_count":418.0,"name":"bernerse"},{"media_count":460.0,"name":"berneray"},{"media_count":1635.0,"name":"bernersofinsta"},{"media_count":441.0,"name":"berner916"},{"media_count":436.0,"name":"bernerproblems"},{"media_count":453.0,"name":"bernernation"},{"media_count":1491.0,"name":"bernersofig"},{"media_count":2608.0,"name":"elixiacarlberner"},{"media_count":874.0,"name":"happyberners"},{"media_count":668.0,"name":"bernerlover"}]}'
+      string: '{"meta":{"code":200},"data":[{"media_count":242282.0,"name":"berner"},{"media_count":65854.0,"name":"bernersennen"},{"media_count":23347.0,"name":"berneroberland"},{"media_count":16661.0,"name":"berners"},{"media_count":36670.0,"name":"bernersennenhund"},{"media_count":28606.0,"name":"berneroftheday"},{"media_count":16503.0,"name":"bernerpuppy"},{"media_count":21816.0,"name":"bernerlove"},{"media_count":12054.0,"name":"berner415"},{"media_count":8485.0,"name":"bernerstavern"},{"media_count":36346.0,"name":"bernersofinstagram"},{"media_count":1716.0,"name":"bernersennenhond"},{"media_count":5444.0,"name":"bernerpup"},{"media_count":4831.0,"name":"bernerdaily"},{"media_count":3969.0,"name":"bernerlife"},{"media_count":980.0,"name":"bernercookies"},{"media_count":3919.0,"name":"bernerofinstagram"},{"media_count":2943.0,"name":"bernerbaby"},{"media_count":843.0,"name":"bernerie"},{"media_count":7773.0,"name":"instaberner"},{"media_count":5581.0,"name":"bernersoftheday"},{"media_count":1766.0,"name":"bernersenne"},{"media_count":2617.0,"name":"myberner"},{"media_count":1623.0,"name":"bernerteam"},{"media_count":905.0,"name":"bernerlovers"},{"media_count":5948.0,"name":"dailyberner"},{"media_count":1917.0,"name":"bernermountaindog"},{"media_count":1810.0,"name":"bernergram"},{"media_count":1400.0,"name":"bernersenner"},{"media_count":3013.0,"name":"officialberners"},{"media_count":4128.0,"name":"babyberner"},{"media_count":1323.0,"name":"bernerscookies"},{"media_count":3814.0,"name":"carlberner"},{"media_count":792.0,"name":"bernermix"},{"media_count":1114.0,"name":"bernersdaily"},{"media_count":371.0,"name":"bernerd"},{"media_count":649.0,"name":"bernerconcert"},{"media_count":312.0,"name":"bernera"},{"media_count":486.0,"name":"bernermunster"},{"media_count":699.0,"name":"bernerpuppies"},{"media_count":418.0,"name":"bernerse"},{"media_count":460.0,"name":"berneray"},{"media_count":1635.0,"name":"bernersofinsta"},{"media_count":441.0,"name":"berner916"},{"media_count":436.0,"name":"bernerproblems"},{"media_count":453.0,"name":"bernernation"},{"media_count":1491.0,"name":"bernersofig"},{"media_count":2608.0,"name":"elixiacarlberner"},{"media_count":874.0,"name":"happyberners"},{"media_count":668.0,"name":"bernerlover"}]}'
     http_version: 
-  recorded_at: Thu, 17 Dec 2015 06:40:13 GMT
+  recorded_at: Thu, 17 Dec 2015 06:48:45 GMT
 - request:
     method: get
     uri: https://api.instagram.com/v1/tags/berner/media/recent.json?access_token=2331596714.2dd2c36.bd9e537a6ecc4b6ea85b0cc9f22a5779
@@ -124,7 +124,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '458'
+      - '445'
       Content-Language:
       - en
       Expires:
@@ -138,13 +138,13 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 17 Dec 2015 06:40:14 GMT
+      - Thu, 17 Dec 2015 06:48:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=e35675793a8486cb7aa9f3b229973b33; expires=Thu, 15-Dec-2016 06:40:14
+      - csrftoken=74f98b954fa4ebfed6018c9d55c89638; expires=Thu, 15-Dec-2016 06:48:45
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 17-Dec-2015 07:40:14 GMT; Max-Age=3600; Path=/
+      - s_network=; expires=Thu, 17-Dec-2015 07:48:45 GMT; Max-Age=3600; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -189,5 +189,5 @@ http_interactions:
         Careaga"},"id":"1045226913956400511"},"user_has_liked":false,"id":"1045226910793895570_16510802","user":{"username":"careaga_kate","profile_picture":"http:\/\/scontent.cdninstagram.com\/hphotos-xtf1\/t51.2885-19\/s150x150\/11809969_1610641125869458_738196221_a.jpg","id":"16510802","full_name":"Kate
         Careaga"}}]}'
     http_version: 
-  recorded_at: Thu, 17 Dec 2015 06:40:14 GMT
+  recorded_at: Thu, 17 Dec 2015 06:48:45 GMT
 recorded_with: VCR 3.0.0
