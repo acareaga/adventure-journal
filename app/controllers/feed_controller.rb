@@ -14,4 +14,12 @@ class FeedController < ApplicationController
   def show
     @recent_feed = Media.search_by_tag(current_user, params[:q])
   end
+
+  def like_post
+    @like_post = Media.like_post(current_user, id)
+  end
+
+  def unlike_post
+    @unlike_post = Media.unlike_post(current_user, id)
+  end
 end

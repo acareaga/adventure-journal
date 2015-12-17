@@ -14,4 +14,12 @@ class InstagramService
     tags = client.tag_search(tag)
     client.tag_recent_media(tags[0].name)
   end
+
+  def like_post(id)
+    client.like_media(id)
+  end
+
+  def unlike_post(id)
+    client.unlike_media(id)
+  end
 end
