@@ -1,7 +1,9 @@
 class FeedController < ApplicationController
 
   def index
-    @recent_feed = Media.search_by_tag(current_user, 'berner')
+    if current_user
+      @recent_feed = Media.search_by_tag(current_user, 'berner')
+    end
   end
 
   def create
