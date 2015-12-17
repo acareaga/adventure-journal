@@ -3,13 +3,13 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
 
   test "you can create a user with valid attributes" do
-    user = User.create(  username:           "lolabeans",
-                  name:               "Lola",
-                  bio:                "Woof",
-                  profile_picture:    "http://www.google.com",
-                  website:            "google.com",
-                  oauth_token:        "1233123211231321233212"
-                )
+    user = User.create( username:           "lolabeans",
+                        name:               "Lola",
+                        bio:                "Woof",
+                        profile_picture:    "http://www.google.com",
+                        website:            "google.com",
+                        oauth_token:        "1233123211231321233212"
+                      )
 
     assert_equal "Lola", user.name
     assert_equal "Woof", user.bio
