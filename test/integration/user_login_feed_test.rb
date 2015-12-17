@@ -29,4 +29,24 @@ class UserLoginFeedTest < ActionDispatch::IntegrationTest
       assert page.has_link?("logout")
     end
   end
+
+  # test "user can search photos by tag" do
+  #   VCR.use_cassette("feed#show") do
+  #     visit "/"
+  #
+  #     click_link "login"
+  #     click_link "AdventureJournal"
+  #
+  #     within "#search-field" do
+  #       fill_in("#search-box", with: "skiing").send_keys(:return)
+  #     end
+  #
+  #     within("#berners-love-snow-days-cowx-denver-berner-bernesemountaindog-snowday") do
+  #       assert page.has_content?("powskiing")
+  #       assert page.has_content?("Favorites: 25")
+  #       assert page.has_content?("Comments: 0")
+  #       assert page.has_content?("Berners love snow days")
+  #     end
+  #   end
+  # end
 end
