@@ -14,20 +14,20 @@ class InstagramServiceTest < ActiveSupport::TestCase
       assert_equal "aaronturing", post.user.username
       assert_equal "Aaron", post.user.full_name
       assert_equal "Snowing hard!", post.caption.text
-      assert_equal 1, post.likes.count
-      assert_equal 1, post.comments.count
+      assert_equal 0, post.likes[:count]
+      assert_equal 0, post.comments[:count]
     end
   end
 
   test "#feed" do
     VCR.use_cassette("instagram_service#search_by_tag") do
-      post = service.search_by_tag('berner').first
+      post = service.search_by_tag('skiing').first
 
       assert_equal "powskiing", post.caption.from.username
       assert_equal "Aaron Careaga", post.caption.from.full_name
-      assert_equal "Berners love snow days #cowx #denver #berner #bernesemountaindog #snowday", post.caption.text
-      assert_equal 1, post.likes.count
-      assert_equal 1, post.comments.count
+      assert_equal "doesn't get much better @arapahoe_basin #skicolorado #skiing #cowx #getoutside #powderday", post.caption.text
+      assert_equal 34, post.likes[:count]
+      assert_equal 0, post.comments[:count]
     end
   end
 end
