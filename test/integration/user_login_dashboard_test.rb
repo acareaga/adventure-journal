@@ -23,4 +23,19 @@ class UserLoginDashboardTest < ActionDispatch::IntegrationTest
       assert page.has_link?("logout")
     end
   end
+
+  test "user can logout from dashboard and is redirected to root path" do
+    VCR.use_cassette("dashboard#show") do
+      visit "/"
+
+      click_link "login"
+
+      assert_equal "/aaronturing", current_path
+
+      click_link "logout"
+
+      assert_equal "/", current_path
+      assert page.has_content?("Start Your Adventure")
+    end
+  end
 end
