@@ -19,8 +19,8 @@ class UserLoginFeedTest < ActionDispatch::IntegrationTest
 
       within("#berners-love-snow-days-cowx-denver-berner-bernesemountaindog-snowday") do
         assert page.has_content?("powskiing")
-        assert page.has_content?("Favorites: 1")
-        assert page.has_content?("Comments: 1")
+        assert page.has_content?("Favorites: 25")
+        assert page.has_content?("Comments: 0")
         assert page.has_content?("Berners love snow days")
       end
 
