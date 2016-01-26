@@ -6,6 +6,8 @@ API Curious is the first individual project in Module 3 at the Turing School. Ad
 
 [Project Outline](https://github.com/turingschool/lesson_plans/blob/master/ruby_03-professional_rails_applications/apicurious.md#available-apis) | [Heroku](http://adventurejournal.herokuapp.com/)
 
+![Adventure Journal](http://www.aaroncareaga.com/wp-content/uploads/2016/01/Screen-Shot-2016-01-21-at-10.53.46-AM.png "Adventure Journal")
+
 ### Instructions
 
 * clone the project in your terminal by running `git clone git@github.com:acareaga/adventure-journal.git`
